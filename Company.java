@@ -1,13 +1,14 @@
-
 package model;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class Company
 {
-
-	private LinkedList<Product> products;
+	//----------------------------------Attribute----------------------------------------------------------------------------------
+	private TreeSet<Product> products;
 	private String name;
+
+	// ----------------------------------Constructor--------------------------------------------------------------------------------
 	
 	public Company(String name)
 	{
@@ -16,19 +17,20 @@ public class Company
 	}
 	public Company()
 	{
-	this(IBM);
+		this("IBM");
 	}
 	private void init()
 	{
-		new LinkedList<>(50);
+		products = new TreeSet<>();
 	}
-	public void setName(String name)
-	{
-	this.name = name;
-	}
+	// ----------------------------------Getter-------------------------------------------------------------------------------------
 	public String getName()
 	{
-	return name;
+		return name;
 	}
-
+	// ----------------------------------Setter-------------------------------------------------------------------------------------
+	public void setName(String name)
+	{
+		this.name = name;
+	}	
 }
