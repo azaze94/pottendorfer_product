@@ -14,6 +14,10 @@ public class Company
 		init();
 		setName(name);
 	}
+	public Company()
+	{
+	this(IBM);
+	}
 	private void init()
 	{
 		new ArrayList<>(50);
