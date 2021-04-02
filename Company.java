@@ -1,18 +1,19 @@
 package model;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class Company
 {
-
-	private ArrayList<Product> products;
+	//----------------------------------Attribute----------------------------------------------------------------------------------
+	private TreeSet<Product> products;
 	
+	// ----------------------------------Constructor--------------------------------------------------------------------------------
 	public Company()
 	{
 		init();
 	}
 	private void init()
 	{
-		new ArrayList<>(50);
+		new TreeSet<>();
 	}
 }
