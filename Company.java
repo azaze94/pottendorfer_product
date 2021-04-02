@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class Company
 {
 
-	private ArrayList<Product> products;
+	private LinkedList<Product> products;
 	private String name;
 	
 	public Company(String name)
@@ -20,7 +20,7 @@ public class Company
 	}
 	private void init()
 	{
-		new ArrayList<>(50);
+		new LinkedList<>(50);
 	}
 	public void setName(String name)
 	{
