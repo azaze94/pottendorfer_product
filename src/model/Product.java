@@ -31,7 +31,7 @@ public class Product
 		{
 		return price;
 		}
-	}
+
 	private boolean isOnStock()
 	{
 		return onStock;
@@ -43,6 +43,7 @@ public class Product
 		this.name = name;
 		}
 	public  void setPrice(float price)
+	{
 		{
 		this.price = price;
 		}
